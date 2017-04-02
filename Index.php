@@ -13,6 +13,12 @@ and open the template in the editor.
         
         <form name ="formulario" action="Conexion_PDO.php" method ="post" >
     
+        <label for="casilla_nick">Nick</label>
+    
+    	<input type="text" name="casilla_nick" id="casilla_nick" placeholder="Ingrese Nick" >
+        
+        <br>
+            
     	<label for="casilla_sexo">Sexo</label>
     
     	<input type="text" name="casilla_sexo" id="casilla_sexo" placeholder="Ingrese Sexo" >
