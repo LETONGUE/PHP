@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         
-        <form name ="formulario" action="Conexion_PDO.php" method="post" >
+        <form name ="formulario" action="Conexion_PDO.php" method ="post" >
     
     	<label for="casilla_sexo">Sexo</label>
     

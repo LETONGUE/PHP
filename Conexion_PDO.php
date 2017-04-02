@@ -28,11 +28,11 @@
 		
 		$BASE_DATOS->exec("SET CHARACTER SET utf8");
 		
-		$sql = "SELECT NICK, CLAVE, SEXO FROM USUARIO WHERE SEXO=? AND CLAVE=?";	
+		$sql = "SELECT NICK, CLAVE, SEXO FROM USUARIO WHERE SEXO=:sex_usuario AND CLAVE=:clave_usuario";	
 		
 		$PDO_stmt = $BASE_DATOS->prepare($sql);
 		
-		$PDO_stmt->execute(array($sexo,$clave)); //Aqui se inserta el tipo de dato que se quiere extraer del resultSet
+		$PDO_stmt->execute(array(":sex_usuario"=>$sexo,":clave_usuario"=>$clave)); //Aqui se inserta el tipo de dato que se quiere extraer del resultSet
 			
 			
 			
